@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pgLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0E1"
+    android:backgroundTint="#FFD79D"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:shadowColor="#AC2020"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#D32F2F"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLogin"
+        android:layout_width="300dp"
+        android:layout_height="397dp"
+        android:layout_marginTop="28dp"
+        android:background="#DDC3A5"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="#FFF1E1"
+        app:layout_constraintEnd_toEndOf="@+id/tvLogin"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/tvLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin">
+
+        <EditText
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/user"
+            android:gravity="center|start"
+            android:hint="Enter EMAIL"
+            android:paddingLeft="13dp"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHighlight="#FF0000"
+            android:textColorHint="#8C8C8C"
+            android:textColorLink="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/password"
+            android:ems="0"
+            android:gravity="center|start"
+            android:hint="Enter PASSWORD"
+            android:inputType="textPassword"
+            android:paddingLeft="12dp"
+            android:shadowColor="#000000"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textColorHighlight="#FF0000"
+            android:textColorHint="#8C8C8C"
+            android:textColorLink="#000000" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#512DA8"
+            android:gravity="center"
+            android:text="LOGIN" />
+
+        <TextView
+            android:id="@+id/tvSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="116dp"
+            android:layout_marginTop="280dp"
+            android:text="---- OR ----"
+            android:textAlignment="center"
+            android:textColor="#101010"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="320dp"
+            android:background="#000000"
+            android:backgroundTint="#FA0303"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/imgGoogle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="320dp"
+            app:srcCompat="@drawable/google" />
+
+        <CheckBox
+            android:id="@+id/cbRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="135dp"
+            android:text="Remember ME"
+            android:textColor="#101010"
+            android:textColorHighlight="#232121"
+            android:textColorLink="#221F1F" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvNoaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="120dp"
+        android:text="Dont have an Account ?"
+        android:textColor="#222020"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardLogin"
+        app:layout_constraintTop_toBottomOf="@+id/cardLogin" />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="SIGNUP "
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvNoaccount"
+        app:layout_constraintTop_toBottomOf="@+id/cardLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
